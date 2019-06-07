@@ -11,10 +11,10 @@ const pkg = readPkgUp.sync({ cwd: __dirname })!.package
 export const VERSION = pkg.version
 
 if (minor(VERSION) % 2 === 0) { // production release
-  console.log(`${VERSION} is production release`)
+  console.info(`${VERSION} is production release`)
   process.exit(1) // exit 1 for not development
 }
 
 // development release
-console.log(`${VERSION} is development release`)
+console.info(`${VERSION} is development release`)
 process.exit(0)
