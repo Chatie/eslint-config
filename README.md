@@ -12,8 +12,14 @@ ESLint Sharable Rules in TypeScript Standard Style
 
 ## SEE ALSO
 
-- [ESLint Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs)
 - [Using ESLint with TypeScript in 2019](https://43081j.com/2019/02/using-eslint-with-typescript)
+- [ESLint Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs)
+- [From TSLint to ESLint, or How I Learned to Lint GraphQL Code](https://artsy.github.io/blog/2019/01/29/from-tslint-to-eslint/)
+
+### tslint -> eslint
+
+- [Roadmap: tslint-microsoft-contrib -> ESLint #876](https://github.com/microsoft/tslint-microsoft-contrib/issues/876)
+- [The future of TypeScript on ESLint](https://eslint.org/blog/2019/01/future-typescript-eslint)
 
 ## HISTORY
 
@@ -31,6 +37,6 @@ ESLint Sharable Rules in TypeScript Standard Style
 
 ## COPYRIGHT & LICENSE
 
-- Code & Docs © 2019 - now Huan LI \<zixia@zixia.net\>
+- Code & Docs © 2019 - now Huan LI zixia@zixia.net
 - Code released under the Apache-2.0 License
 - Docs released under Creative Commons

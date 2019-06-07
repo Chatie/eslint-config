@@ -5,21 +5,27 @@ module.exports =  {
   ],
   plugins: [
     '@typescript-eslint',
+    '@typescript-eslint/tslint',
   ],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
       modules: true,
-    }
+    },
+    project: "tsconfig.json",
   },
   env: {
     browser: true,
     node: true,
   },
   rules: {
-    // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
-    // e.g. '@typescript-eslint/explicit-function-return-type': 'off',
+    "@typescript-eslint/tslint/config": [
+      "error",
+      {
+        "lintFile": "./tslint.json", // path to tslint.json of your project
+      },
+    ],
     'no-multi-spaces': 'off',
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': ['error', { allow: ['info'] }],
