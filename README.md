@@ -1,6 +1,14 @@
 # eslint-config
 
-ESLint Sharable Rules
+ESLint Sharable Rules in TypeScript Standard Style
+
+![ESLint Sharable Rules in TypeScript Standard Style](https://chatie.github.io/eslint-config/images/eslint-config-chatie.jpg)
+> Source: [Using ESLint and Prettier in a TypeScript Project](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project)
+
+## STYLES
+
+- [JavaScript Standard Style](https://standardjs.com)
+  - [ESLint Config for JavaScript Standard Style](https://github.com/standard/eslint-config-standard)
 
 ## SEE ALSO
 
@@ -13,11 +21,11 @@ ESLint Sharable Rules
 
 ### v0.1 07 June 2019
 
-1. Converted tsling.json to .eslintrc.js
+1. Converted tsling.json to .eslintrc.js with the JavaScript Standard Style.
 
 ## AUTHOR
 
-[Huan LI (李卓桓)](http://linkedin.com/in/zixia) \<zixia@zixia.net\>
+[Huan LI (李卓桓)](http://linkedin.com/in/zixia) zixia@zixia.net
 
 [![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
 
