@@ -1,6 +1,6 @@
 {
   "name": "@chatie/tslint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TSLint Sharable Configurations and Rules in Chatie Organization",
   "main": "tslint.json",
   "scripts": {
