@@ -18,7 +18,10 @@
     "eslint",
     "eslintConfig"
   ],
-  "author": "Huan LI <zixia@zixia.net>",
+  "author": {
+    "name": "Huan LI",
+    "email": "zixia@zixia.net"
+  },
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Chatie/eslint-config/issues"
@@ -63,7 +66,6 @@
     "tag": "latest"
   },
   "files": [
-    ".eslintrc.js",
-    "tslint.json"
+    ".eslintrc.js"
   ]
 }

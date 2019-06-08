@@ -11,6 +11,7 @@ cache:
 
 stages:
   - test
+  - pack
   - name: deploy
     if: (type = push) AND branch =~ ^(master|v\d+\.\d+)$
 
@@ -22,23 +23,29 @@ script:
   - npm --version
   - echo "Testing Started ..."
   - npm test
-  # - if [ "$TRAVIS_OS_NAME" == 'linux' ]; then npm run coverage; fi
   - echo "Testing Finished"
-  - echo "TRAVIS_TEST_RESULT=$TRAVIS_TEST_RESULT"
 
 jobs:
   include:
+
+    - stage: pack
+      script:
+        - echo "NPM Pack Testing Started ..."
+        - npm version
+        - npm run test:pack
+        - echo "NPM Pack Testing Finished."
 
     - stage: deploy
       script:
         - echo "NPM Deploying Started ..."
         - npm version
         - if ./scripts/development-release.ts; then ./scripts/package-publish-config-tag-next.ts; fi
+        - npm run dist
         - echo "NPM Building Finished."
 
       deploy:
         provider: npm
-        email: dev@chatie.io
+        email: zixia@zixia.net
         api_key: "$NPM_TOKEN"
         skip_cleanup: true
         on:

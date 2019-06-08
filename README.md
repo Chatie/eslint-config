@@ -5,6 +5,31 @@ ESLint Sharable Rules in TypeScript Standard Style
 ![ESLint Sharable Rules in TypeScript Standard Style](https://chatie.github.io/eslint-config/images/eslint-config-chatie.jpg)
 > Source: [Using ESLint and Prettier in a TypeScript Project](https://www.robertcooper.me/using-eslint-and-prettier-in-a-typescript-project)
 
+## USAGE
+
+### 1. Install `@chatie/eslint-config`
+
+```sh
+npm install @chatie/eslint-config
+```
+
+### 2. Create `.eslintrc.yaml`
+
+In the root directory of your project (which should contains your `package.json` file), create `.eslintrc.yaml` as the following content.
+
+```yaml
+---
+extends: '@chatie'
+```
+
+### 3. You are All Set
+
+```sh
+./node_modules/.bin/eslint
+```
+
+`eslint` will works and follow the @chatie rules.
+
 ## STYLES
 
 - [JavaScript Standard Style](https://standardjs.com)
