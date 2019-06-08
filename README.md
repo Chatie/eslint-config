@@ -55,7 +55,7 @@ extends: '@chatie'
 
 ### v0.3 (master)
 
-1. WIP...
+1. Auto generate `.eslintrc.yaml` in the project root directory after install if it not exists.
 
 ### v0.2 June 08 2019
 
