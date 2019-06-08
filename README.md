@@ -53,7 +53,11 @@ extends: '@chatie'
 
 ## HISTORY
 
-### v0.2 master
+### v0.3 master
+
+1. WIP...
+
+### v0.2 (08 Jun 2019)
 
 1. First beta
 
