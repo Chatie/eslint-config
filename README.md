@@ -53,7 +53,9 @@ extends: '@chatie'
 
 ## HISTORY
 
-### v0.3 (master)
+### v0.5 (master)
+
+### v0.4 Jne 08 2019
 
 1. Auto generate `.eslintrc.yaml` in the project root directory after install if it not exists.
 
