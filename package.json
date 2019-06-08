@@ -6,6 +6,7 @@
   "scripts": {
     "dist": "echo dist",
     "pack": "npm pack",
+    "postinstall": "./dist/bin/post-install",
     "lint": "echo lint",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
     "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
@@ -40,6 +41,7 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "pkg-up": "^3.1.0",
     "tslint": "^5.17.0",
     "tslint-config-standard": "^8.0.1"
   },
