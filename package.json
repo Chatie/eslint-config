@@ -69,6 +69,7 @@
     "tag": "latest"
   },
   "files": [
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "bin/install"
   ]
 }
