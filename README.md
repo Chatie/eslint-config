@@ -53,9 +53,11 @@ extends: '@chatie'
 
 ## HISTORY
 
-### v0.x master
+### v0.2 master
 
-### v0.1 07 June 2019
+1. First beta
+
+### v0.0.1 07 June 2019
 
 1. Converted tsling.json to .eslintrc.js with the JavaScript Standard Style.
 
