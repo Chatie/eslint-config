@@ -26,13 +26,14 @@ test('Should fail linting for anti-patterns/**/*.ts', async t => {
     const fileContents = fs.readFileSync(antiPatternFilename, 'utf8')
     const report       = cli.executeOnText(fileContents, antiPatternFilename)
 
-    // const shortFilename = antiPatternFilename.
+    const baseName = path.basename(antiPatternFilename)
+
     if (report.errorCount > 0) {
       const ruleId = report.results[0].messages[0].ruleId
       const message = report.results[0].messages[0].message
-      t.pass(`${antiPatternFilename}: ${ruleId}: ${message}`)
+      t.pass(`${baseName}: ${ruleId}: ${message}`)
     } else {
-      t.fail(`${antiPatternFilename}: no error detected`)
+      t.fail(`${baseName}: error detection failed`)
     }
   }
 })
@@ -45,10 +46,12 @@ test('Should pass linting for good-patterns/**/*.ts', async t => {
     const fileContents = fs.readFileSync(goodPatternFilename, 'utf8')
     const report       = cli.executeOnText(fileContents, goodPatternFilename)
 
+    const baseName = path.basename(goodPatternFilename)
+
     if (report.errorCount === 0) {
-      t.pass(`${goodPatternFilename}: no error detected for good pattern source codes`)
+      t.pass(`${baseName}: good pattern source codes is good`)
     } else {
-      t.fail(`${goodPatternFilename}: error detected for good pattern source codes`)
+      t.fail(`${baseName}: good pattern source codes mis-detected as bad`)
     }
   }
 })

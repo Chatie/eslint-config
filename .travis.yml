@@ -18,15 +18,17 @@ stages:
 install:
   - npm install
 
-script:
-  - node --version
-  - npm --version
-  - echo "Testing Started ..."
-  - npm test
-  - echo "Testing Finished"
 
 jobs:
   include:
+
+    - stage: test
+      script:
+          - node --version
+          - npm --version
+          - echo "Testing Started ..."
+          - npm test
+          - echo "Testing Finished"
 
     - stage: pack
       script:
