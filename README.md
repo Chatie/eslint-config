@@ -10,12 +10,12 @@ ESLint Sharable Rules in TypeScript Standard Style
 ### 1. Install `@chatie/eslint-config`
 
 ```sh
-npm install @chatie/eslint-config
+npm install --save-dev @chatie/eslint-config
 ```
 
 ### 2. Create `.eslintrc.yaml`
 
-In the root directory of your project (which should contains your `package.json` file), create `.eslintrc.yaml` as the following content.
+In the root directory of your project (which should contains your `package.json` file), create `.eslintrc.yaml` with the following content:
 
 ```yaml
 ---
@@ -28,7 +28,7 @@ extends: '@chatie'
 ./node_modules/.bin/eslint
 ```
 
-`eslint` will works and follow the @chatie rules.
+`eslint` will work and follow the @chatie rules.
 
 ## STYLES
 
