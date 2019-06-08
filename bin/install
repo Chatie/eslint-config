@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 
-import fs     from 'fs'
-import path   from 'path'
+const fs = require('fs')
+const path = require('path')
 
-import pkgUp from 'pkg-up'
+const pkgUp = require('pkg-up')
 
 const ESLINTRC_YAML_CONTENT = `---
 extends: '@chatie'
 `
 
-async function main (): Promise<number> {
-  const pkg = await pkgUp()
+async function main () {
+  const cwd = path.join(__dirname, '..', '..')
+  const pkg = await pkgUp({ cwd })
   if (!pkg) {
-    console.info('@chatie/eslint-config: failed to find package directory.')
-    return 1
+    return 0
   }
   const pkgDir = path.dirname(pkg)
 
