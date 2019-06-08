@@ -12,8 +12,8 @@ ESLint Sharable Rules in TypeScript Standard Style
 
 ## SEE ALSO
 
-- [Using ESLint with TypeScript in 2019](https://43081j.com/2019/02/using-eslint-with-typescript)
 - [ESLint Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs)
+- [Using ESLint with TypeScript in 2019](https://43081j.com/2019/02/using-eslint-with-typescript)
 - [From TSLint to ESLint, or How I Learned to Lint GraphQL Code](https://artsy.github.io/blog/2019/01/29/from-tslint-to-eslint/)
 
 ### tslint -> eslint

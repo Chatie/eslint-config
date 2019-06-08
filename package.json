@@ -2,10 +2,14 @@
   "name": "@chatie/eslint-config",
   "version": "0.0.6",
   "description": "ESLint Sharable Configurations and Rules in Chatie Organization",
-  "main": "eslint.json",
+  "main": ".eslintrc.js",
   "scripts": {
+    "dist": "echo dist",
+    "pack": "npm pack",
     "lint": "echo lint",
+    "test:pack": "bash -x scripts/npm-pack-testing.sh",
     "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
+
   },
   "repository": {
     "type": "git",
@@ -39,6 +43,7 @@
   "devDependencies": {
     "@chatie/tsconfig": "^0.4.3",
     "@types/blue-tape": "^0.1.33",
+    "@types/eslint": "^4.16.6",
     "@types/glob": "^7.1.1",
     "@types/semver": "^6.0.0",
     "blue-tape": "^1.0.0",
@@ -59,6 +64,7 @@
     "tag": "latest"
   },
   "files": [
-    ".eslintrc.json"
+    ".eslintrc.js",
+    "tslint.json"
   ]
 }
