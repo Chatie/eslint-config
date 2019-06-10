@@ -46,7 +46,7 @@ module.exports =  {
       ],
     }],
     'comma-dangle': ['error', 'always-multiline'],
-    'key-spacing': 'off'
+    'key-spacing': 'off',
     'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
     'no-multi-spaces': 'off',
   },
