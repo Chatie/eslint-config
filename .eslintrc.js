@@ -45,8 +45,9 @@ module.exports =  {
         'node_modules/@wwwouter/tslint-contrib',
       ],
     }],
-    'no-multi-spaces': 'off',
     'comma-dangle': ['error', 'always-multiline'],
-    'no-console': ['error', { allow: ['info'] }],
+    'key-spacing': 'off'
+    'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
+    'no-multi-spaces': 'off',
   },
 }
