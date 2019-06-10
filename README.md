@@ -51,6 +51,19 @@ extends: '@chatie'
 - [The future of TypeScript on ESLint](https://eslint.org/blog/2019/01/future-typescript-eslint)
 - [ESLint Plugin TSLint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin-tslint)
 
+## FAQ
+
+### 1. `vscode` not linting TypeScript files at all
+
+Add the following config to `.vscode/settings.json` to enable linting TypeScript files:
+
+```json
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+```json
+
 ## HISTORY
 
 ### v0.5 (master)
