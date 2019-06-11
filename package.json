@@ -9,7 +9,7 @@
     "postinstall": "node bin/install.js",
     "lint": "echo lint",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
-    "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
+    "test": "npm ls ts-node && blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",
