@@ -6,7 +6,7 @@
   "scripts": {
     "dist": "echo dist",
     "pack": "npm pack",
-    "postinstall": "node scripts/install.js",
+    "postinstall": "node bin/install.js",
     "lint": "echo lint",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
     "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
@@ -46,18 +46,12 @@
     "tslint-config-standard": "^8.0.1"
   },
   "devDependencies": {
+    "@chatie/git-scripts": "^0.2.1",
     "@chatie/tsconfig": "^0.4.3",
     "@types/eslint": "^4.16.6",
     "@types/glob": "^7.1.1",
-    "git-scripts": "^0.2.1",
     "glob": "^7.1.4",
-    "read-pkg-up": "^6.0.0",
     "tstest": "^0.2.4"
-  },
-  "git": {
-    "scripts": {
-      "pre-push": "./scripts/pre-push.sh"
-    }
   },
   "publishConfig": {
     "access": "public",
@@ -65,6 +59,11 @@
   },
   "files": [
     ".eslintrc.js",
-    "bin/install"
-  ]
+    "bin/install.js"
+  ],
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
 }
