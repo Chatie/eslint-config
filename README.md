@@ -62,21 +62,18 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
     "javascript",
     "typescript",
   ],
-```json
+```
 
 ## HISTORY
 
-### v0.5 (master)
+### master
 
-### v0.4 Jne 08 2019
+### v0.6 (08 Jun 2019)
 
 1. Auto generate `.eslintrc.yaml` in the project root directory after install if it not exists.
-
-### v0.2 June 08 2019
-
 1. First beta
 
-### v0.0.1 June 07 2019
+### v0.0.1 (07 Jun 2019)
 
 1. Converted tsling.json to .eslintrc.js with the JavaScript Standard Style.
 
