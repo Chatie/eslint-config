@@ -6,7 +6,7 @@
   "scripts": {
     "dist": "echo dist",
     "pack": "npm pack",
-    "postinstall": "node bin/install",
+    "postinstall": "node scripts/install.js",
     "lint": "echo lint",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
     "test": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
@@ -66,7 +66,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "files": [
     ".eslintrc.js",
