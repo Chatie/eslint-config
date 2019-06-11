@@ -12,7 +12,7 @@ export class Test {
     console.info([
       1,
       2,
-    ])
+    ], options)
     const test = path.join('xixi', 'haha')
     console.info(test)
   }
