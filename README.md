@@ -62,7 +62,7 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
     "javascript",
     "typescript",
   ],
-```json
+```
 
 ## HISTORY
 
