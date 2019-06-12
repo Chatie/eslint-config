@@ -2,14 +2,15 @@
   "name": "@chatie/eslint-config",
   "version": "0.6.5",
   "description": "ESLint Sharable Configurations and Rules in Chatie Organization",
-  "main": ".eslintrc.js",
+  "main": "src/eslintrc.js",
   "scripts": {
     "dist": "echo dist",
     "pack": "npm pack",
     "postinstall": "node bin/install.js",
-    "lint": "echo lint",
+    "lint": "eslint src/**/*.js",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
-    "test": "npm ls ts-node && blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",
@@ -57,10 +58,6 @@
     "access": "public",
     "tag": "next"
   },
-  "files": [
-    ".eslintrc.js",
-    "bin/install.js"
-  ],
   "git": {
     "scripts": {
       "pre-push": "npx git-scripts-pre-push"

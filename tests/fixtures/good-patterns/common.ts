@@ -6,6 +6,7 @@ export interface TestOptions {
 }
 
 export class Test {
+
   public static async resolve (
     options: TestOptions
   ): Promise<any> {
@@ -16,4 +17,5 @@ export class Test {
     const test = path.join('xixi', 'haha')
     console.info(test)
   }
+
 }
