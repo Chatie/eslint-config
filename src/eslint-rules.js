@@ -3,10 +3,14 @@ const ESLINT_RULES = {
   'key-spacing': 'off',
   'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
   'no-multi-spaces': 'off',
-  // note you must disable the base rule as it can report incorrect errors
   'no-unused-vars': 'off',
   '@typescript-eslint/no-unused-vars': 'error',
+  'no-useless-constructor': 'off',
+  '@typescript-eslint/no-useless-constructor': 'off',
+  'no-dupe-class-members': 'off',
+  'operator-linebreak': ['error', 'before'],
   'padded-blocks': ['error', { 'classes': 'always' }],
+
 }
 
 module.exports = {
