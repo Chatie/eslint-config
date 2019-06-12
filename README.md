@@ -11,19 +11,20 @@ ESLint Sharable Rules in TypeScript Standard Style
 
 ## USAGE
 
-### 1. Install `@chatie/eslint-config`
+1. Install `@chatie/eslint-config`
 
 ```sh
 npm install --save-dev @chatie/eslint-config
 ```
 
-### 2. Create `.eslintrc.yaml`
+2. It will automatically generate a `.eslintrc.js` for you (if there's no such file before)
 
-In the root directory of your project (which should contains your `package.json` file), create `.eslintrc.yaml` with the following content:
+It will contains the following content:
 
-```yaml
----
-extends: '@chatie'
+```js
+module.exports = {
+  extends: '@chatie',
+}
 ```
 
 ### 3. You are All Set
