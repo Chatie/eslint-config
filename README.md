@@ -3,6 +3,7 @@
 [![NPM Version](https://badge.fury.io/js/%40chatie%2Feslint-config.svg)](https://www.npmjs.com/package/@chatie/eslint-config)
 [![npm (tag)](https://img.shields.io/npm/v/%40chatie/eslint-config/next.svg)](https://www.npmjs.com/package/@chatie/eslint-config?activeTab=versions)
 [![Build Status](https://travis-ci.com/Chatie/eslint-config.svg?branch=master)](https://travis-ci.com/Chatie/eslint-config)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Chatie/eslint-config.svg)](https://greenkeeper.io/)
 
 ESLint Sharable Rules in TypeScript Standard Style
 
@@ -11,19 +12,20 @@ ESLint Sharable Rules in TypeScript Standard Style
 
 ## USAGE
 
-### 1. Install `@chatie/eslint-config`
+1. Install `@chatie/eslint-config`
 
 ```sh
 npm install --save-dev @chatie/eslint-config
 ```
 
-### 2. Create `.eslintrc.yaml`
+2. It will automatically generate a `.eslintrc.js` for you (if there's no such file before)
 
-In the root directory of your project (which should contains your `package.json` file), create `.eslintrc.yaml` with the following content:
+It will contains the following content:
 
-```yaml
----
-extends: '@chatie'
+```js
+module.exports = {
+  extends: '@chatie',
+}
 ```
 
 ### 3. You are All Set
