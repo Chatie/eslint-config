@@ -3,6 +3,7 @@
 [![NPM Version](https://badge.fury.io/js/%40chatie%2Feslint-config.svg)](https://www.npmjs.com/package/@chatie/eslint-config)
 [![npm (tag)](https://img.shields.io/npm/v/%40chatie/eslint-config/next.svg)](https://www.npmjs.com/package/@chatie/eslint-config?activeTab=versions)
 [![Build Status](https://travis-ci.com/Chatie/eslint-config.svg?branch=master)](https://travis-ci.com/Chatie/eslint-config)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Chatie/eslint-config.svg)](https://greenkeeper.io/)
 
 ESLint Sharable Rules in TypeScript Standard Style
 
@@ -82,7 +83,7 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 [Huan LI (李卓桓)](http://linkedin.com/in/zixia) zixia@zixia.net
 
-[![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499) [![Greenkeeper badge](https://badges.greenkeeper.io/Chatie/eslint-config.svg)](https://greenkeeper.io/)
+[![Profile of Huan LI (李卓桓) on StackOverflow](https://stackexchange.com/users/flair/265499.png)](https://stackexchange.com/users/265499)
 
 ## COPYRIGHT & LICENSE
 
