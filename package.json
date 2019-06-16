@@ -52,7 +52,7 @@
     "@types/eslint": "^4.16.6",
     "@types/glob": "^7.1.1",
     "glob": "^7.1.4",
-    "tstest": "^0.2.4"
+    "tstest": "^0.4.2"
   },
   "publishConfig": {
     "access": "public",
