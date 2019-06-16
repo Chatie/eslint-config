@@ -7,7 +7,7 @@ npm run pack
 TMPDIR="/tmp/npm-pack-testing.$$"
 mkdir "$TMPDIR"
 mv *-*.*.*.tgz "$TMPDIR"
-cp -R tests/fixtures "$TMPDIR"
+cp -R tests/fixtures/* "$TMPDIR"
 
 cd $TMPDIR
 npm init -y
@@ -29,9 +29,8 @@ npm install --production \
   --noEmitOnError \
   --noImplicitAny \
   --skipLibCheck \
-  fixtures/smoke-testing.ts
+  smoke-testing.ts
 
-cd fixtures
-ln -s ../node_modules
+mv eslintrc.yaml .eslintrc.yaml
 
 node smoke-testing.js
