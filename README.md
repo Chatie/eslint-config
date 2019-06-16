@@ -68,6 +68,8 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 ### master
 
+1. Add `markdownlint-cli` dependence for including the `markdownlint` utility
+
 ### v0.6 (08 Jun 2019)
 
 1. Auto generate `.eslintrc.yaml` in the project root directory after install if it not exists.
