@@ -1,4 +1,4 @@
-export class Test {
+export class Bad {
   constructor () {
     console.info('ok')
   }

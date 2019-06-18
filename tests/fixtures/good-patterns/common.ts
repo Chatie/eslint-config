@@ -1,15 +1,15 @@
 import path       from 'path'
 
-export interface TestOptions {
+export interface GoodOptions {
   foo?    : string
   barrrr? : number
 }
 
-export class Test {
+export class Good {
 
-  public static async resolve (
-    options: TestOptions
-  ): Promise<any> {
+  public static resolve (
+    options: GoodOptions
+  ): any {
     console.info([
       1,
       2,

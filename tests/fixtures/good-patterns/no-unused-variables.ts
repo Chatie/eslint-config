@@ -1,5 +1,5 @@
 import { ParsedPath } from 'path'
 
-export function test (path: ParsedPath): void {
+export function good (path: ParsedPath): void {
   console.info(path)
 }

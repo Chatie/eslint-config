@@ -8,12 +8,14 @@ const rules = {
 
 const ESLINT_RC =  {
   parser:  '@typescript-eslint/parser',  // Specifies the ESLint parser
-  extends: [
-    'standard',
-  ],
   plugins: [
     '@typescript-eslint',
     '@typescript-eslint/tslint',
+    'promise',
+  ],
+  extends: [
+    'plugin:promise/recommended',
+    'standard',
   ],
   parserOptions: {
     ecmaVersion: 6,
