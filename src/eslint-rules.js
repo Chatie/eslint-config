@@ -11,7 +11,6 @@ const ESLINT_RULES = {
   'no-useless-constructor': 'off',
   'operator-linebreak': ['error', 'before'],
   'padded-blocks': ['error', { 'classes': 'always' }],
-  'require-await': 'error',
 }
 
 module.exports = {
