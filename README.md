@@ -70,7 +70,8 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 ### v0.6 (08 Jun 2019)
 
-1. Add recommended rules from [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
+1. Add rule [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/pull/495)
+1. Add rule set (recommended) from [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
 1. Add dependence of [file-name-linter](https://npmjs.com/package/file-name-linter) to lint file names.
 1. Add dependence of [markdownlint-cli](https://npmjs.com/package/markdownlint-cli) to lint markdown.
 1. Auto generate `.eslintrc.js` in the project root directory after install if it not exists.

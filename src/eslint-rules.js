@@ -1,4 +1,5 @@
 const ESLINT_RULES = {
+  '@typescript-eslint/no-floating-promises': 'error',
   '@typescript-eslint/no-unused-vars': 'error',
   '@typescript-eslint/no-useless-constructor': 'off',
   'comma-dangle': ['error', 'always-multiline'],
