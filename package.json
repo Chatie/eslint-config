@@ -1,6 +1,6 @@
 {
   "name": "@chatie/eslint-config",
-  "version": "0.6.11",
+  "version": "0.6.12",
   "description": "ESLint Sharable Configurations and Rules in Chatie Organization",
   "main": "src/eslintrc.js",
   "scripts": {
@@ -43,17 +43,20 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
     "file-name-linter": "^1.1.0",
+    "markdownlint-cli": "^0.17.0",
     "pkg-up": "^3.1.0",
     "tslint": "^5.17.0",
     "tslint-config-standard": "^8.0.1"
   },
   "devDependencies": {
     "@chatie/git-scripts": "^0.2.1",
+    "@chatie/semver": "^0.4.7",
     "@chatie/tsconfig": "^0.6.1",
     "@types/eslint": "^4.16.6",
     "@types/glob": "^7.1.1",
     "glob": "^7.1.4",
-    "tstest": "^0.2.4"
+    "pkg-jq": "^0.2.3",
+    "tstest": "^0.4.2"
   },
   "publishConfig": {
     "access": "public",
