@@ -68,10 +68,9 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 ## HISTORY
 
-### master
-
 ### v0.6 (08 Jun 2019)
 
+1. Add [file-name-linter](https://npmjs.com/package/file-name-linter) to linting file names.
 1. Auto generate `.eslintrc.yaml` in the project root directory after install if it not exists.
 1. First beta
 
