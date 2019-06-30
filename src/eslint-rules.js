@@ -10,6 +10,7 @@ const ESLINT_RULES = {
   'no-useless-constructor': 'off',
   'operator-linebreak': ['error', 'before'],
   'padded-blocks': ['error', { 'classes': 'always' }],
+  'sort-keys': 'error',
 }
 
 module.exports = {

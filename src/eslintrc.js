@@ -7,28 +7,28 @@ const rules = {
 }
 
 const ESLINT_RC =  {
+  env: {
+    browser: true,
+    node: true,
+  },
+  extends: [
+    'plugin:promise/recommended',
+    'standard',
+  ],
   parser:  '@typescript-eslint/parser',  // Specifies the ESLint parser
+  parserOptions: {
+    ecmaFeatures: {
+      modules: true,
+    },
+    ecmaVersion: 6,
+    project: 'tsconfig.json',
+    sourceType: 'module',
+  },
   plugins: [
     '@typescript-eslint',
     '@typescript-eslint/tslint',
     'promise',
   ],
-  extends: [
-    'plugin:promise/recommended',
-    'standard',
-  ],
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-    ecmaFeatures: {
-      modules: true,
-    },
-    project: 'tsconfig.json',
-  },
-  env: {
-    browser: true,
-    node: true,
-  },
   rules,
 }
 
