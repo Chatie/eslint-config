@@ -31,8 +31,8 @@
   "homepage": "https://github.com/Chatie/eslint-config#readme",
   "peerDependencies": {},
   "dependencies": {
+    "@typescript-eslint/eslint-plugin-tslint": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^1.9.0",
     "@typescript-eslint/parser": "^1.10.3-alpha.12",
     "@wwwouter/tslint-contrib": "^1.0.0",
     "babel-eslint": "^10.0.1",
