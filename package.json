@@ -46,7 +46,7 @@
     "markdownlint-cli": "^0.22.0",
     "pkg-up": "^3.1.0",
     "tslint": "^5.17.0",
-    "tslint-config-standard": "^8.0.1"
+    "tslint-config-standard": "^9.0.0"
   },
   "devDependencies": {
     "@chatie/git-scripts": "^0.2.1",
