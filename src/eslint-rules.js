@@ -1,6 +1,5 @@
 const ESLINT_RULES = {
   '@typescript-eslint/no-floating-promises': 'error',
-  '@typescript-eslint/no-unused-vars': 'error',
   '@typescript-eslint/no-useless-constructor': 'off',
   'comma-dangle': ['error', 'always-multiline'],
   'key-spacing': 'off',
@@ -11,6 +10,7 @@ const ESLINT_RULES = {
   'no-useless-constructor': 'off',
   'operator-linebreak': ['error', 'before'],
   'padded-blocks': ['error', { classes: 'always' }],
+  'sort-keys': 'error',
 }
 
 module.exports = {
