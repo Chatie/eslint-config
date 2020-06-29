@@ -68,7 +68,12 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 ## HISTORY
 
-### v0.6 (08 Jun 2019)
+### v0.11 (Jun 30, 2020)
+
+1. Update dependencies to latest.
+1. Support `Nullish coalescing operator (??)`
+
+### v0.6 (08 Jun, 2019)
 
 1. Add rule [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/pull/495)
 1. Add rule set (recommended) from [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
