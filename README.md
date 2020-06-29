@@ -2,8 +2,7 @@
 
 [![NPM Version](https://badge.fury.io/js/%40chatie%2Feslint-config.svg)](https://www.npmjs.com/package/@chatie/eslint-config)
 [![npm (tag)](https://img.shields.io/npm/v/%40chatie/eslint-config/next.svg)](https://www.npmjs.com/package/@chatie/eslint-config?activeTab=versions)
-[![Build Status](https://travis-ci.com/Chatie/eslint-config.svg?branch=master)](https://travis-ci.com/Chatie/eslint-config)
-
+[![NPM](https://github.com/Chatie/eslint-config/workflows/NPM/badge.svg)](https://github.com/Chatie/eslint-config/actions?query=workflow%3ANPM)
 
 ESLint Sharable Rules in TypeScript Standard Style
 
