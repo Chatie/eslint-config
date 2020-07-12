@@ -11,6 +11,7 @@ const ESLINT_RULES = {
   'operator-linebreak': ['error', 'before'],
   'padded-blocks': ['error', { classes: 'always' }],
   'sort-keys': 'error',
+  'no-void': ["error", { "allowAsStatement": true }],
 }
 
 module.exports = {
