@@ -8,10 +8,10 @@ const ESLINT_RULES = {
   'no-multi-spaces': 'off',
   'no-unused-vars': 'off',
   'no-useless-constructor': 'off',
+  'no-void': ['error', { allowAsStatement: true }],
   'operator-linebreak': ['error', 'before'],
   'padded-blocks': ['error', { classes: 'always' }],
   'sort-keys': 'error',
-  'no-void': ["error", { "allowAsStatement": true }],
 }
 
 module.exports = {
