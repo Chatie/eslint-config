@@ -5,7 +5,7 @@ const path = require('path')
 
 const pkgUp = require('pkg-up')
 
-const ESLINTRC_YAML_CONTENT = `
+const ESLINTRC_CJS_CONTENT = `
 const rules = {
 }
 
@@ -23,11 +23,11 @@ async function main () {
   }
   const pkgDir = path.dirname(pkgFile)
 
-  const eslintRcJsFile = path.join(pkgDir, '.eslintrc.js')
+  const eslintRcJsFile = path.join(pkgDir, '.eslintrc.cjs')
 
   if (!fs.existsSync(eslintRcJsFile)) {
     console.info(`@chatie/eslint-config: auto generated ${eslintRcJsFile}`)
-    fs.writeFileSync(eslintRcJsFile, ESLINTRC_YAML_CONTENT)
+    fs.writeFileSync(eslintRcJsFile, ESLINTRC_CJS_CONTENT)
   }
   return 0
 }
