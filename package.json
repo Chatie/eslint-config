@@ -1,8 +1,11 @@
 {
   "name": "@chatie/eslint-config",
-  "version": "0.12.2",
+  "version": "0.13.0",
   "description": "ESLint Sharable Configurations and Rules in Chatie Organization",
   "main": "src/eslintrc.js",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "dist": "echo dist",
     "pack": "npm pack",
