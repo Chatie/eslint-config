@@ -54,6 +54,11 @@ test('Should pass linting for good-patterns/**/*.ts', async t => {
       t.pass(`${baseName}: good pattern source codes is good`)
     } else {
       t.fail(`${baseName}: good pattern source codes mis-detected as bad`)
+      report.results.forEach(result => {
+        result.messages.forEach(message => {
+          console.error('Error:', message.ruleId, message.message)
+        })
+      })
     }
   }
 })
