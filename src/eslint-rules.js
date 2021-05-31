@@ -2,6 +2,7 @@ const ESLINT_RULES = {
   '@typescript-eslint/no-floating-promises': 'error',
   '@typescript-eslint/no-useless-constructor': 'off',
   'comma-dangle': ['error', 'always-multiline'],
+  'dot-notation': ['off'],
   'key-spacing': 'off',
   'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
   'no-dupe-class-members': 'off',
