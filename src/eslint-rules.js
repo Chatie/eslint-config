@@ -1,6 +1,7 @@
 const ESLINT_RULES = {
   '@typescript-eslint/no-floating-promises': 'error',
   '@typescript-eslint/no-useless-constructor': 'off',
+  'brace-style': ['1tbs', { "allowSingleLine": true }],
   'comma-dangle': ['error', 'always-multiline'],
   'dot-notation': ['off'],
   'key-spacing': 'off',
