@@ -1,5 +1,5 @@
-const { ESLINT_RULES }  = require('./eslint-rules')
-const { TSLINT_CONFIG } = require('./tslint-config')
+const { ESLINT_RULES }  = require('./eslint-rules.cjs')
+const { TSLINT_CONFIG } = require('./tslint-config.cjs')
 
 const rules = {
   ...ESLINT_RULES,
@@ -21,6 +21,9 @@ const ESLINT_RC =  {
       modules: true,
     },
     ecmaVersion: 6,
+    extraFileExtensions: [
+      '.cjs',
+    ],
     project: 'tsconfig.json',
     sourceType: 'module',
   },
