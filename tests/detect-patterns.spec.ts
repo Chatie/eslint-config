@@ -10,7 +10,7 @@ import glob   from 'glob'
 import { CLIEngine } from 'eslint'
 
 const cli = new CLIEngine({
-  configFile: '.eslintrc.js',
+  configFile: '.eslintrc.cjs',
   useEslintrc: false,
 })
 

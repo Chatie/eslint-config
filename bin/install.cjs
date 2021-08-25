@@ -5,7 +5,7 @@ const path = require('path')
 
 const pkgUp = require('pkg-up')
 
-const ESLINTRC_YAML_CONTENT = `
+const ESLINTRC_CJS_CONTENT = `
 const rules = {
 }
 
@@ -15,6 +15,12 @@ module.exports = {
 }
 `
 
+const RC_EXT_LIST = [
+  'cjs',
+  'js',
+  'yaml',
+]
+
 async function main () {
   const cwd = path.join(__dirname, '..', '..')
   const pkgFile = await pkgUp({ cwd })
@@ -23,11 +29,14 @@ async function main () {
   }
   const pkgDir = path.dirname(pkgFile)
 
-  const eslintRcJsFile = path.join(pkgDir, '.eslintrc.js')
+  const existRc = RC_EXT_LIST.some(ext => fs.existsSync(
+    path.join(pkgDir, `.eslintrc.${ext}`)
+  ))
 
-  if (!fs.existsSync(eslintRcJsFile)) {
+  if (!existRc) {
+    const eslintRcJsFile = path.join(pkgDir, '.eslintrc.cjs')
     console.info(`@chatie/eslint-config: auto generated ${eslintRcJsFile}`)
-    fs.writeFileSync(eslintRcJsFile, ESLINTRC_YAML_CONTENT)
+    fs.writeFileSync(eslintRcJsFile, ESLINTRC_CJS_CONTENT)
   }
   return 0
 }
