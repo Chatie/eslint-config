@@ -1,6 +1,6 @@
 {
   "name": "@chatie/eslint-config",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "description": "ESLint Sharable Configurations and Rules in Chatie Organization",
   "main": "./src/eslintrc.cjs",
   "scripts": {
