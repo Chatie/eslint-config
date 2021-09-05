@@ -67,7 +67,9 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 ## HISTORY
 
-### v0.13
+### main
+
+### v0.14
 
 1. Enforce Common JS ([#54](https://github.com/Chatie/eslint-config/issues/54))
 1. Upgrade ESLint
