@@ -51,7 +51,7 @@
   "devDependencies": {
     "@chatie/git-scripts": "^0.6.2",
     "@chatie/semver": "^0.4.7",
-    "@chatie/tsconfig": "^0.16.2",
+    "@chatie/tsconfig": "^0.20.2",
     "@types/eslint": "^7.28.0",
     "@types/glob": "^7.1.4",
     "glob": "^7.1.7",
