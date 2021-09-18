@@ -18,7 +18,7 @@ const TSLINT_CONFIG = {
   },
   rulesDirectory: [
     // array of paths to directories with rules, e.g. 'node_modules/tslint/lib/rules' (will be used if `lintFile` is not specified)
-    'node_modules/@wwwouter/tslint-contrib',
+    // 'node_modules/@wwwouter/tslint-contrib',
   ],
 }
 

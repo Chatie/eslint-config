@@ -48,6 +48,7 @@ module.exports = {
 
 ### tslint -> eslint
 
+- [Roadmap: TSLint -> ESLint #4534](https://github.com/palantir/tslint/issues/4534)
 - [Roadmap: tslint-microsoft-contrib -> ESLint #876](https://github.com/microsoft/tslint-microsoft-contrib/issues/876)
 - [The future of TypeScript on ESLint](https://eslint.org/blog/2019/01/future-typescript-eslint)
 - [ESLint Plugin TSLint](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin-tslint)
