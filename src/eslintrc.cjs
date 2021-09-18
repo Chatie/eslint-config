@@ -20,7 +20,7 @@ const ESLINT_RC =  {
     ecmaFeatures: {
       modules: true,
     },
-    ecmaVersion: 6,
+    ecmaVersion: 12,
     extraFileExtensions: [
       '.cjs',
     ],
