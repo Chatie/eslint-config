@@ -14,9 +14,6 @@ const cli = new ESLint({
   useEslintrc: false,
 })
 
-// const TSLINT_JSON_FILE   = path.join(__dirname, '..', 'tslint.json')
-// const TSCONFIG_JSON_FILE = path.join(__dirname, '..', 'tsconfig.json')
-
 const ANTI_PATTERNS_DIR = path.join(__dirname, 'fixtures/anti-patterns')
 const GOOD_PATTERNS_DIR = path.join(__dirname, 'fixtures/good-patterns')
 

@@ -1,9 +1,9 @@
 const { ESLINT_RULES }  = require('./eslint-rules.cjs')
-const { TSLINT_CONFIG } = require('./tslint-config.cjs')
+// const { TSLINT_CONFIG } = require('./tslint-config.cjs')
 
 const rules = {
   ...ESLINT_RULES,
-  '@typescript-eslint/tslint/config': ['error', TSLINT_CONFIG],
+  // '@typescript-eslint/tslint/config': ['error', TSLINT_CONFIG],
 }
 
 const ESLINT_RC =  {
@@ -29,7 +29,7 @@ const ESLINT_RC =  {
   },
   plugins: [
     '@typescript-eslint',
-    '@typescript-eslint/tslint',
+    // '@typescript-eslint/tslint',
     'promise',
   ],
   rules,

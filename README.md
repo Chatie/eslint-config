@@ -68,7 +68,9 @@ Add the following config to `.vscode/settings.json` to enable linting TypeScript
 
 ## HISTORY
 
-### main
+### main v0.15 (Sep 18, 2021)
+
+1. Clean TSLint...
 
 ### v0.14
 

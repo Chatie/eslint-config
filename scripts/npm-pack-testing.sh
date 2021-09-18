@@ -19,6 +19,8 @@ npm install --production \
   @types/node \
   @chatie/tsconfig \
   blue-tape \
+  eslint \
+  eslint-plugin-promise \
   glob \
   typescript
 
