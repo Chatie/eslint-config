@@ -8,7 +8,7 @@ export interface GoodOptions {
 export class Good {
 
   public static resolve (
-    options: GoodOptions
+    options: GoodOptions,
   ): any {
     console.info([
       1,

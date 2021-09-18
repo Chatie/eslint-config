@@ -34,8 +34,8 @@ test('Should fail linting for anti-patterns/**/*.ts', async t => {
 
     for (const report of reports) {
       if (report.errorCount > 0) {
-        const ruleId = report.messages[0].ruleId
-        const message = report.messages[0].message
+        const ruleId = report.messages[0]!.ruleId
+        const message = report.messages[0]!.message
         t.pass(`${baseName}: ${ruleId}: ${message}`)
       } else {
         t.fail(`${baseName}: error detection failed`)

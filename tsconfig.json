@@ -2,6 +2,7 @@
   "extends": "@chatie/tsconfig",
   "compilerOptions": {
     "outDir": "dist",
+    "module": "commonjs",
   },
   "exclude": [
     "node_modules/",
