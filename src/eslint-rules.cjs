@@ -6,7 +6,7 @@ const ESLINT_RULES = {
   'brace-style': ['error', '1tbs', { allowSingleLine: true }],
   'comma-dangle': ['error', 'always-multiline'],
   'dot-notation': ['off'],
-  'import/extensions': ['error', 'always'],
+  'import/extensions': ['error', 'ignorePackages'],
   'key-spacing': 'off',
   'multiline-ternary': 'off',
   'no-console': ['error', { allow: ['info', 'warn', 'error'] }],

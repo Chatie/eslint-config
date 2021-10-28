@@ -5,7 +5,6 @@
   "main": "./src/eslintrc.cjs",
   "scripts": {
     "dist": "echo dist",
-    "pack": "npm pack",
     "postinstall": "node bin/install.cjs",
     "lint": "eslint src/**/*.*js",
     "test:pack": "bash -x scripts/npm-pack-testing.sh",
