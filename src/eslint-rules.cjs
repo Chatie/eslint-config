@@ -12,6 +12,7 @@ const ESLINT_RULES = {
   'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
   'no-dupe-class-members': 'off',
   'no-multi-spaces': 'off',
+  'no-redeclare': 'off',
   'no-unused-vars': 'off',
   'no-useless-constructor': 'off',
   'no-void': ['error', { allowAsStatement: true }],
