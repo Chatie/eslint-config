@@ -3,6 +3,7 @@ const ESLINT_RULES = {
   '@typescript-eslint/no-misused-promises': 'error',
   '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
   '@typescript-eslint/no-useless-constructor': 'off',
+  'array-bracket-spacing': ['error', 'always'],
   'brace-style': ['error', '1tbs', { allowSingleLine: true }],
   'comma-dangle': ['error', 'always-multiline'],
   'dot-notation': ['off'],
