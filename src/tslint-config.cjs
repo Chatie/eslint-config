@@ -4,7 +4,7 @@ const TSLINT_CONFIG = {
     'arrow-parens': false,
     'comment-format': false,
     'import-spacing': false,
-    'interface-name': [true, 'never-prefix'],
+    'interface-name': [ true, 'never-prefix' ],
     'max-line-length': false,
     'member-ordering': false,
     'no-console': false,
