@@ -4,7 +4,7 @@ import fs     from 'fs'
 import path   from 'path'
 import util   from 'util'
 
-import test   from 'blue-tape'
+import { test }   from 'tstest'
 import glob   from 'glob'
 
 import { ESLint } from 'eslint'
