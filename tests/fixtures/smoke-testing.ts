@@ -4,15 +4,15 @@ import fs     from 'fs'
 import path   from 'path'
 import util   from 'util'
 
-import test   from 'blue-tape'
+import { test } from 'tstest'
 import glob   from 'glob'
 
-import { CLIEngine } from 'eslint'
+import { ESLint } from 'eslint'
 
 // const ESLINTRC_YAML = path.join(__dirname, '.eslintrc.yaml')
 
-const cli = new CLIEngine({
-  configFile: '.eslintrc.yaml',
+const cli = new ESLint({
+  overrideConfigFile: '.eslintrc.yaml',
 })
 
 const ANTI_PATTERNS_DIR = path.join(__dirname, 'anti-patterns')
@@ -24,16 +24,18 @@ test('Should fail linting for anti-patterns/**/*.ts', async t => {
 
   for (const antiPatternFilename of antiPatternFilenameList) {
     const fileContents = fs.readFileSync(antiPatternFilename, 'utf8')
-    const report       = cli.executeOnText(fileContents, antiPatternFilename)
+    const reportList   = await cli.lintText(fileContents, { filePath: antiPatternFilename })
 
     const baseName = path.basename(antiPatternFilename)
 
-    if (report.errorCount > 0) {
-      const ruleId = report.results[0].messages[0].ruleId
-      const message = report.results[0].messages[0].message
-      t.pass(`${baseName}: ${ruleId}: ${message}`)
-    } else {
-      t.fail(`${baseName}: error detection failed`)
+    for (const report of reportList) {
+      if (report.errorCount > 0) {
+        const ruleId = report.messages[0]?.ruleId
+        const message = report.messages[0]?.message
+        t.pass(`${baseName}: ${ruleId}: ${message}`)
+      } else {
+        t.fail(`${baseName}: error detection failed`)
+      }
     }
   }
 })
@@ -44,14 +46,16 @@ test('Should pass linting for good-patterns/**/*.ts', async t => {
 
   for (const goodPatternFilename of goodPatternFilenameList) {
     const fileContents = fs.readFileSync(goodPatternFilename, 'utf8')
-    const report       = cli.executeOnText(fileContents, goodPatternFilename)
+    const reportList   = await cli.lintText(fileContents, { filePath: goodPatternFilename })
 
     const baseName = path.basename(goodPatternFilename)
 
-    if (report.errorCount === 0) {
-      t.pass(`${baseName}: good pattern source codes is good`)
-    } else {
-      t.fail(`${baseName}: good pattern source codes mis-detected as bad`)
+    for (const report of reportList) {
+      if (report.errorCount === 0) {
+        t.pass(`${baseName}: good pattern source codes is good`)
+      } else {
+        t.fail(`${baseName}: good pattern source codes mis-detected as bad`)
+      }
     }
   }
 })
